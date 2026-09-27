@@ -23,7 +23,7 @@ void m2(){
     a++;
     cout << y << endl;
     const int &z = 5;
-    cout << z << endl;
+    cout << z << " " << &z << endl;
 }
 
 void m3(){
@@ -49,8 +49,9 @@ void m4(){
     A(1,2);
 }
 
+
 int main(){
-    m3();
+    m2();
     return 0;
 }
 
