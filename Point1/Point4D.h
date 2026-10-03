@@ -13,5 +13,5 @@ class Point4D : public Point3D{
         ~Point4D();
 
         //Show(), Show3D, A()
-        void Show(); //Đa hình lại show 
+        void Show(); //Overwrite lại show 
 };
