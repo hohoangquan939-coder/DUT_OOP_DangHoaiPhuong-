@@ -70,3 +70,22 @@ istream& operator>>(istream& is, Point& p){
     is >> p.yVal;
     return is;
 }
+
+// prefix 
+Point& Point::operator++(){
+    this->xVal++; 
+    this->yVal++;
+    return (*this);
+}
+
+//postfix
+const Point Point::operator++(int a){
+    Point bef = *this;
+    this->xVal++; this->yVal++;
+    return bef;
+}
+
+
+bool Point::operator==(const Point& p) const{
+    return this->xVal == p.xVal && this->yVal == p.yVal;
+}

@@ -29,6 +29,11 @@ class Point{
         friend Point operator+(const Point&, const Point&);
         friend Point operator-(const Point&, const Point&);
         Point operator-(const Point&);
+        
+        //prefix
+        Point& operator++();
+        const Point operator++(int);
+        bool operator==(const Point&) const;
 
         friend ostream& operator<<(ostream& os, const Point&);
         friend istream& operator>>(istream& is,Point&);
