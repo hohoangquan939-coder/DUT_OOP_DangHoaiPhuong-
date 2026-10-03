@@ -25,3 +25,10 @@ Point::~Point(){
     cout << "Huy diem" << endl;
 }
 
+void Point::A(){
+    cout << "Point A" << endl;
+}
+
+void Point::A(int x){
+    cout << "Point A " << x << endl;
+}

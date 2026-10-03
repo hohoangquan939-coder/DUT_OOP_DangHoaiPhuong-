@@ -14,5 +14,12 @@ class Point3D : public Point{
         Point3D(const int& = 1, const int& = 1, const int& = 1);
         ~Point3D();
         void Show3D();
+        void Show(); // Thông báo cho trình biên dịch sẽ define lại show
+        
+// Lớp con sẽ kế thừa toàn bộ overload của lớp cha
+// Nếu lớp con overwrite 1 hàm overload thì các hàm overload của class cha bị che đi
+
+// Kế thừa A() và A(int)
+        void A(); //overwrite hàm A nên hàm A chứa tham số sẽ ko được tính
 
 };

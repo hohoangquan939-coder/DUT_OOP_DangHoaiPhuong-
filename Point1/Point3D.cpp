@@ -15,3 +15,11 @@ void Point3D::Show3D(){
     cout << this->xVal << ", " << this->yVal << ", " << this->zVal << endl;
 }
 
+void Point3D::Show(){
+    Point::Show();
+    cout << this->zVal << endl;
+}
+
+void Point3D::A(){
+    cout << "Point3D" << endl;
+}

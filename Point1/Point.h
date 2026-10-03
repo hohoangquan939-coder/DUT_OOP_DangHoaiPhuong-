@@ -11,4 +11,8 @@ class Point{
         Point(const Point&);
         ~Point();
         void Show();
+        
+        //overload
+        void A();
+        void A(int);
 };

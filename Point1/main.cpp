@@ -4,8 +4,12 @@ using namespace std;
 
 int main(){
 
-    Point3D p1(2, 3, 4);
-    p1.Show3D();
-    
+    Point p1(1, 2);
+    Point3D p2(2, 3, 4);
+
+    p1.Show();
+    p2.Show();
+    p2.A();
+
     return 0;
 }
