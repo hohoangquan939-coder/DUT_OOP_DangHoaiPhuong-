@@ -1,15 +1,12 @@
 #include <iostream>
-#include "Point3D.h"
+#include "Point4D.h"
 using namespace std;
 
 int main(){
 
-    Point p1(1, 2);
-    Point3D p2(2, 3, 4);
-
-    p1.Show();
-    p2.Show();
-    p2.A();
-
+    Point4D p(1,2,3,4);
+    p.Show();
+    p.A();
+    
     return 0;
 }
