@@ -18,6 +18,6 @@ class QuanLiSV{
         void Delete(const string&); // MSSV
         bool Search(const string&); // MSSV
         
-        void Sort();
+        void Sort(); // sap xep tang dan theo GPA 
 
 };

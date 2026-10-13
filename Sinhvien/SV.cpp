@@ -9,3 +9,7 @@ SV::SV(string name, string mssv, float gpa, int drl, int day, int month, int yea
 string SV::GetMSSV(){
     return this->MSSV;
 }
+
+float SV::GetGPA(){
+    return this->GPA;
+}

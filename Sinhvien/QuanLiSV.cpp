@@ -4,9 +4,6 @@ QuanLiSV::QuanLiSV() : n(0), p(nullptr){
 }
 
 QuanLiSV::~QuanLiSV(){
-    for(int i = 0; i < this->n; i++){
-        delete *(this->p + i);
-    }
     delete[] this->p;
 }
 
@@ -72,4 +69,25 @@ bool QuanLiSV::Search(const string& mssv){
         if((*(this->p + i))->GetMSSV() == mssv) return true;
     }
     return false;
+}
+
+
+
+void QuanLiSV::Sort(){
+    // Selection sort
+    for(int i = 0; i < this->n; i++){
+        int index_min = i;
+
+        for(int j = i + 1; j < this->n; j++){
+            if(this->p[index_min]->GetGPA() > this->p[j]->GetGPA()){
+                index_min = j;
+            }
+        }
+
+        if(index_min != i){
+            SV* tmp = this->p[index_min];
+            this->p[index_min] = this->p[i];
+            this->p[i] = tmp;
+        }
+    }
 }

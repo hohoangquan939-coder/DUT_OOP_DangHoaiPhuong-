@@ -19,4 +19,5 @@ class SV{
         virtual void Show() = 0;
 
         string GetMSSV();
+        float GetGPA();
 };  
