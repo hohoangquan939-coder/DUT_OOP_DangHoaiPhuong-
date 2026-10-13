@@ -18,6 +18,11 @@ int main(){
     ql1.Show();
     ql1.Update("0224", svcntt4);
     ql1.Show();
-    
+    ql1.Delete("0223");
+    ql1.Show();
+    ql1.Delete("0000");
+    ql1.Show();
+
+
     return 0;
 }

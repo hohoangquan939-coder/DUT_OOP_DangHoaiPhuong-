@@ -16,7 +16,7 @@ class QuanLiSV{
         void Show();
         void Update(const string&, SV& x);
         void Delete(const string&); // MSSV
-        void Search(const string&); // MSSV
+        bool Search(const string&); // MSSV
         
         void Sort();
 
