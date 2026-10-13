@@ -10,11 +10,14 @@ int main(){
     SVCNTT svcntt2("B", "0223", 3, 83, 6, 3, 2000);
     SVCNTT svcntt3("C", "0224", 4, 80, 4, 5, 2000);
     
+    SVCNTT svcntt4("D", "0224", 3.9, 80, 4, 5, 2000);
     ql1.AddSV(svcntt1);
     ql1.AddSV(svcntt2);
     ql1.AddSV(svcntt3);
 
     ql1.Show();
-
+    ql1.Update("0224", svcntt4);
+    ql1.Show();
+    
     return 0;
 }

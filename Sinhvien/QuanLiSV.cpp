@@ -22,6 +22,13 @@ void QuanLiSV::AddSV(SV& sv){
     this->p = tmp;
 }
 
+void QuanLiSV::Update(const string& mssv, SV& x){
+    for(int i = 0; i < this->n; i++){
+        if((*(this->p + i))->GetMSSV() == mssv){
+            *(this->p + i) = &x;
+        }
+    }
+}
 
 void QuanLiSV::Show(){
     for(int i = 0; i < this->n; i++){
