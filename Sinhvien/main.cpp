@@ -22,7 +22,7 @@ int main(){
     ql1.Show();
     ql1.Delete("0000");
     ql1.Show();
-
+    ql1.Search("0001") ? cout << "OK" << endl : cout << "No" << endl;   
 
     return 0;
 }

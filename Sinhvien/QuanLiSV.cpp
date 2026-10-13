@@ -67,3 +67,9 @@ void QuanLiSV::Show(){
     }
 }
 
+bool QuanLiSV::Search(const string& mssv){
+    for(int i = 0; i < this->n; i++){
+        if((*(this->p + i))->GetMSSV() == mssv) return true;
+    }
+    return false;
+}
