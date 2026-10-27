@@ -30,7 +30,7 @@ int main(){
     ql1.Delete("0000");
     ql1.Show();
 
-    ql1.Search("0001") ? cout << "OK" << endl : cout << "No" << endl;   
+    ql1.Search("0001") ? cout << "Tim thay sinh vien 0001" << endl : cout << "Khong tim thay sinh vien 0001" << endl;   
 
     ql1.Sort();
     ql1.Show();
